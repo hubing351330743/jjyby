@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>产品介绍</title>
+		<meta name="description" content="久久游专业做棋牌、游戏、娱乐，为您提供国内杰出的网络游戏!">
+		<meta name="Keywords" content="玖玖游，四川麻将，德州扑克">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel='stylesheet' type='text/css' href='css/mui.min.css'>
+		<link rel='stylesheet' type='text/css' href='css/base.css'>
+		<link rel='stylesheet' type='text/css' href='css/content.css'>
+		<link rel="shortcut icon" href="images/favicon.ico">
+	</head>
+
+	<body>
+		<header>
+			<div class="dz_header">
+				<span class="header-left">
+					<a href="#" title="玖玖游德州官网">
+						<span class="daLogo1"></span>
+						<img src="images/dz_logo-title.png"/>
+					</a>
+				</span>
+				<div class="header-right">
+					<ul>
+						<a href="index.html"><li class="shouye active">官方首页</li></a>
+						<a href="news.html"><li class="xwzx">新闻中心</li></a>
+						<a href="gameRaiders.html"><li class="yxgl">游戏攻略</li></a>
+						<a href="HelpCenter.html"><li class="bzzx">帮助中心</li></a>
+						<a href="ContactUs.html"><li class="lxwm">联系我们</li></a>
+						<a href="Recharge.html"><li class="zhcz">账号充值</li></a>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<div class="DzpkContent">
+			<div class="cont-wrap nopr">
+				<div class="cont-left">
+					<div class="cont-title">
+						<div class="nav-name"></div>
+						<div class="nav-positon right">
+							<span>你当前位置：</span><span><a href="index.html" title="返回首页">首页 </a>> <a href="javascript:;" title="您当前位置">产品介绍</a></span>
+						</div>
+					</div>
+					<div class="cont-ul">
+						<div class="gsjs noborder">
+							<h3 class="cpjs"></h3>
+							<p>欢迎你来到《玖玖游德州》的世界！《玖玖游德州》是一款适合各年龄层玩家体 验的休闲游戏。比起以往的棋牌休闲游戏，玖玖游德州更加的生动有趣。它不仅在交 互上更加简便，更加智能化，使您在游戏和打牌时得心应手，挥洒自如；而且在表现 上，玖玖游德州也更加震撼，让你在拿到每一种特殊牌型（葫芦、四条、同花顺、皇 家同花顺）、与其他玩家进行每一次互动时，都能获得视觉的冲击、最生动的游戏体 验。</p>
+						</div>
+						<div class="gsjs noborder">
+							<ul class="cpUl">
+								<li>
+									<div class="cpImg left cpImg1">
+									</div>
+									<div class="cpText right">
+										<h3><span>不同赛场</span>，任你挑选</h3>
+										<p>经典场带给你原来的味道，比赛场给你数不尽现金的奖励，<br />只等你选择，相信会带给你不同爽快的体验！</p>
+									</div>
+								</li>
+								<li>
+									<div class="cpImg right cpImg2">
+									</div>
+									<div class="cpText left">
+										<h3><span>豪华风格</span>，让你倍儿有面子</h3>
+										<p>经典场带给你原来的味道，比赛场给你数不尽现金的奖励，<br />只等你选择，相信会带给你不同爽快的体验！</p>
+									</div>
+								</li>
+								<li>
+									<div class="cpImg left cpImg3">
+									</div>
+									<div class="cpText right">
+										<h3><span>美女相陪</span>，皇帝般享受</h3>
+										<p>经典场带给你原来的味道，比赛场给你数不尽现金的奖励，<br />只等你选择，相信会带给你不同爽快的体验！</p>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+				<a href="#" class="footer-logo" title="深圳九五玖玖网络科技有限公司"><span class="sanjiao"></span></a>
+				<div class="about">
+					<ul>
+						<li>
+							<a href="HelpCenter.html" title="帮助中心">帮助中心 &nbsp;|&nbsp;</a>
+						</li>
+						<li>
+							<a href="ProductIntroduction.html" title="产品介绍">产品介绍 &nbsp;|&nbsp;</a>
+						</li>
+						<li>
+							<a href="ContactUs.html" title=" 联系我们"> 联系我们 &nbsp;|&nbsp;</a>
+						</li>
+						<li>
+							<a href="Business.html" title="商务合作">商务合作</a>
+						</li>
+					</ul>
+					<p>深圳九五玖玖网络科技有限公司</p>
+					<p>粤ICP备17030461号-1 【2015】1803-329号Copyright 2015 版权所有</p>
+				</div>
+				<div class="footer-wangluo">
+					<a href="#"></a>
+					<a href="#"></a>
+					<a href="#"></a>
+				</div>
+		</footer>
+		<script src="js/jquery.js" language="javascript"></script>
+		<script src="js/js.js" language="javascript"></script>
+		<script src="js/mui.min.js" language="javascript"></script>
+		<script>
+			(function($) {
+				$('.mui-pagination').on('tap', 'a', function() {
+					var li = this.parentNode;
+					var classList = li.classList;
+					if (!classList.contains('mui-active') && !classList.contains('mui-disabled')) {
+						var active = li.parentNode.querySelector('.mui-active');
+						if (classList.contains('mui-previous')) {//previous
+							if (active) {
+								var previous = active.previousElementSibling;
+								console.log('previous', previous);
+								if (previous && !previous.classList.contains('mui-previous')) {
+									$.trigger(previous.querySelector('a'), 'tap');
+								} else {
+									classList.add('mui-disabled');
+								}
+							}
+						} else if (classList.contains('mui-next')) {//next
+							if (active) {
+								var next = active.nextElementSibling;
+								if (next && !next.classList.contains('mui-next')) {
+									$.trigger(next.querySelector('a'), 'tap');
+								} else {
+									classList.add('mui-disabled');
+								}
+							}
+						} else {//page
+							active.classList.remove('mui-active');
+							classList.add('mui-active');
+							var page = parseInt(this.innerText);
+							var previousPageElement = li.parentNode.querySelector('.mui-previous');
+							var nextPageElement = li.parentNode.querySelector('.mui-next');
+							previousPageElement.classList.remove('mui-disabled');
+							nextPageElement.classList.remove('mui-disabled');
+							if (page <= 1) {
+								previousPageElement.classList.add('mui-disabled');
+							} else if (page >= 5) {
+								nextPageElement.classList.add('mui-disabled');
+							}
+						}
+					}
+				});
+			})(mui);
+
+    	</script>
+
+	</body>
+</html>

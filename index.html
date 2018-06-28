@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>玖玖游德州官网</title>
+		<meta name="description" content="久久游专业做棋牌、游戏、娱乐，为您提供国内杰出的网络游戏!">
+		<meta name="Keywords" content="玖玖游，四川麻将，德州扑克">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+		<link rel='stylesheet' type='text/css' href='css/base.css'>
+		<link rel='stylesheet' type='text/css' href='css/swiper.min.css'>
+		<link rel='stylesheet' type='text/css' href='css/css.css'>
+		<link rel="shortcut icon" href="images/favicon.ico">
+	</head>
+
+	<body>
+		<header>
+			<div class="dz_header">
+				<span class="header-left">
+					<a href="index.html" title="玖玖游德州官网">
+						<span class="daLogo1"></span>
+						<img src="images/dz_logo-title.png"/>
+					</a>
+				</span>
+				<div class="header-right">
+					<ul>
+						<a href="index.html"><li class="active shouye">官方首页</li></a>
+						<a href="news.html"><li class="xwzx">新闻中心</li></a>
+						<a href="gameRaiders.html"><li class="yxgl">游戏攻略</li></a>
+						<a href="HelpCenter.html"><li class="bzzx">帮助中心</li></a>
+						<a href="ContactUs.html"><li class="lxwm">联系我们</li></a>
+						<a href="Recharge.html"><li class="zhcz">账号充值</li></a>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<nav>
+			<div class="navContent">
+				<a href="#" class="nav-erweima left" title="二维码下载"></a>
+				<div class="nav-down left">
+					<a href="#" title="App Store下载"></a>
+					<a href="#" title="安卓版本下载"></a>
+				</div>
+			</div>
+		</nav>
+		<div class="gray">
+			<div class="cont">
+			<p><em class="hdzx hdpic"></em><span>INFORMATION</span></p>
+			<div class="zx-wrap">
+				<div class="zx-lunbo zx-d">
+					<div class="swiper-container swiper-container2">
+				        <div class="swiper-wrapper swiper-wrapper2">
+				        </div>
+				        <div class="swiper-pagination swiper-pagination2"></div>
+				    </div>
+				</div>
+				<div class="zx-neirong zx-d">
+					<ul class="zx-title">
+						<li class="active" typeText="xw">新闻</li>
+						<li typeText="gg">公告</li>
+						<li typeText="hd">活动</li>
+						<a href="news.html" title="查看更多..." class="more"></a>
+					</ul>
+					<p class="firstHtml"></p>
+					<ul class="zx-detail">
+					</ul>
+				</div>
+			</div>
+			<span class="floater floater5"></span>
+			<span class="floater floater6"></span>
+		</div>
+		</div>
+		<div class="jmjt">
+			<div class="cont">
+				<p>
+					<em class="jmjt hdpic"></em><span>SCREENSHOT</span>
+					<span class="floater floater7"></span>
+					<span class="floater floater8"></span>
+				</p>
+			</div>
+				<div class="swiper-container swiper-container1">
+			        <div class="swiper-wrapper swiper-wrapper0">
+			        </div>
+			        <div class="swiper-pagination swiper-pagination1"></div>
+			        <div class="swiper-button-next swiper-button-next1"></div>
+        			<div class="swiper-button-prev swiper-button-prev1"></div>
+
+			    </div>
+		</div>
+
+		<div class="downwrap">
+			<p class="down-title"></p>
+			<p class="down-text">扫码关注官方微信，更多精彩活动等着您</p>
+			<a href="javascript:;" class="erweima" title="扫码关注官方微信"></a>
+			<a href="#" class="ljxz" title="立即下载">立即下载</a>
+			<span class="floater floater1"></span>
+			<span class="floater floater2"></span>
+			<span class="floater floater3"></span>
+		</div>
+		<footer>
+				<a href="#" class="footer-logo" title="深圳九五玖玖网络科技有限公司"><span class="sanjiao"></span></a>
+				<div class="about">
+					<ul>
+						<li>
+							<a href="HelpCenter.html" title="帮助中心">帮助中心 &nbsp;|&nbsp;</a>
+						</li>
+						<li>
+							<a href="ProductIntroduction.html" title="产品介绍">产品介绍 &nbsp;|&nbsp;</a>
+						</li>
+						<li>
+							<a href="ContactUs.html" title=" 联系我们"> 联系我们 &nbsp;|&nbsp;</a>
+						</li>
+						<li>
+							<a href="Business.html" title="商务合作">商务合作</a>
+						</li>
+					</ul>
+					<p>深圳九五玖玖网络科技有限公司</p>
+					<p>粤ICP备17030461号-1 【2015】1803-329号Copyright 2015 版权所有</p>
+				</div>
+				<div class="footer-wangluo">
+					<a href="#"></a>
+					<a href="#"></a>
+					<a href="#"></a>
+				</div>
+		</footer>
+		<script src="js/jquery.js" language="javascript"></script>
+		<script src="js/js.js" language="javascript"></script>
+		<script src="js/swiper.min.js" language="javascript"></script>
+		<script>
+			getIndexNews(0)
+			getImg(0)
+			getImg(1)
+			$('.zx-title li').bind('click',function(){
+				var typeText=$(this).attr('typeText');
+				if(typeText == 'xw'){
+					getIndexNews(0)
+				}else if(typeText == 'hd'){
+					getIndexNews(1)
+				}else if(typeText =='gg'){
+					getIndexNews(2)
+				}
+				$(this).addClass('active').siblings().removeClass('active')
+			})
+
+
+
+    	</script>
+
+	</body>
+</html>
